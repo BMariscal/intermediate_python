@@ -1,11 +1,7 @@
+<h3><em>Intermediate Python Programming</em></h3>
+<a href='http://shop.oreilly.com/product/0636920049852.do'>Program link</a>
 
-What do Scrabble cheaters, Shakespearean sonnets, Twitter, and the Astronomy
-Picture of the Day have to do with Python software programming? For software
-impresario Jessica McKellar, they’re playful tools for teaching intermediate-level
-Python programming techniques. During her time as an organizer of the Boston Python
-User Group (one of the world’s largest Python groups), she taught hundreds of Python
-wannabees to happily program like pros. She uses that experience to benefit the next
-generation of Pythonistas in this follow-up to her widely popular Introduction to Python video.
+
 
 *Review data structures like lists, dictionaries, and sets; and when to best use them
 
