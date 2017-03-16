@@ -4,7 +4,10 @@
 
 from deque import Deque
 import scrabble
+import time
 
+
+start = time.time()
 def is_palindrome(wordlist):
 
     def create_deque(word):
@@ -25,10 +28,13 @@ def is_palindrome(wordlist):
             pal_list.append(word)
     return max(pal_list, key=len)
 
-
+# too slow: slowest
 
 
 
 
 
 print(is_palindrome(scrabble.wordlist))
+
+stop = time.time()
+print("time elapsed: %.1f seconds"%(stop-start))

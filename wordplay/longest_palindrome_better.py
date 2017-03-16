@@ -1,5 +1,8 @@
 import scrabble
+import time
 
+
+start = time.time()
 longest =""
 
 for word in scrabble.wordlist:
@@ -11,3 +14,7 @@ for word in scrabble.wordlist:
         longest = word
 
 print(longest)
+
+# too slow: second slowest
+stop = time.time()
+print("time elapsed: %.1f seconds"%(stop-start))
