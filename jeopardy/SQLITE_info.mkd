@@ -1,0 +1,69 @@
+
+
+## Practice making SQL queries
+
+### Look at the layout of the Jeopardy database
+
+Start sqlite with:
+
+<pre>sqlite3 jeopardy.db</pre>
+
+Then look at the tables in your database by running the following commands at
+the <code>sqlite</code> prompt:
+
+* <tt>.table</tt>, which will list the tables in the database
+* <tt>.schema category</tt>, which will show the organization of the
+  <tt>category</tt> table, including the fields and the data types they store.
+
+It should look like this:
+
+<pre>sqlite> .schema category
+CREATE TABLE "category" (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    game INTEGER NOT NULL,
+    boardPosition INTEGER
+    );</pre>
+
+This tells us that the <code>category</code> table has 4 fields:
+<code>id</code>, <code>name</code>, <code>game</code>, and
+<code>boardPosition</code>.
+
+### Read more about SQL
+
+If you don't have prior experience with SQL, please read these short documents
+for an introduction:
+
+* [What is SQL?](http://www.w3schools.com/sql/sql_intro.asp)
+* [What is a database schema?](http://wiki.answers.com/Q/What_is_a_database_schema)
+
+Then, check your understanding:
+
+* What tables are in the database?
+* What is a schema?
+* What fields are in the <code>category</code> table?
+* What fields are in the <code>clue</code> table?
+
+### Query the database with SELECT
+
+Try running the following queries from the <code>sqlite</code> prompt:
+
+* <tt>SELECT * FROM category;</tt>
+* <tt>SELECT NAME FROM category;</tt>
+* <tt>SELECT * FROM clue;</tt>
+* <tt>SELECT text, answer, value FROM clue;</tt>
+* <tt>SELECT text, answer, value FROM clue LIMIT 10;</tt>
+
+Explore the <code>category</code> and <code>clue</code> tables with your own
+SELECT queries.
+
+Then, check your understanding:
+
+* What does <code>*</code> mean in the above queries?
+* What does the <code>LIMIT</code> SQL keyword do?
+* Does case matter when making SQL queries?
+
+---
+
+Questions? Please don't hesitate to reach out to the author (me, Jessica!) at:
+<code>jesstess@mit.edu</code>.
