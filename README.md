@@ -1,6 +1,8 @@
 <h3><em>Intermediate Python Programming</em></h3>
 <a href='http://shop.oreilly.com/product/0636920049852.do'>Program link</a>
 
+>
+
 [wordplay](https://github.com/BMariscal/intermediate_python/tree/master/wordplay): Used list comprehension and string slicing
 to find the longest palindrome. Learned about and utilized the sets data structure. Performed timing measurements and basic profiling to understand code efficiency. Learned about printing with string formating. 
 
