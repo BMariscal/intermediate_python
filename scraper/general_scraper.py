@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup
 base_url= 'https://apod.nasa.gov/apod/archivepix.html'
 download_directory= "apod_pictures"
 # What it does:
-# so long as we still have a link to visit. We're going to visit the link,
-# we're going to extract any new links we havent seen before, we're going
-# to download images in that page and we're going to keep going until we don't
+# so long as the page still has a link to visit. The script is going to visit the link,
+# it's going to extract any new links we havent seen before, it's going
+# to download images in that page and it's going to keep going until it doesn't
 #  have any more links left to visit
 to_visit = set((base_url,))
 visited = set()
